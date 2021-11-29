@@ -1,11 +1,20 @@
 import React from "react"
 import "./filterButton.scss"
 
-const FilterButton=({value})=>(
-    <span className="tabs__element">
-        <input name="fastFilter" type="radio" />
-        <label for="fastFilter">{value}</label>
-    </span>   
-)
-
+const FilterButton=({value})=>{
+    return (
+        <div className="tabs__element">
+            <label>
+                <input
+                    type="radio" 
+                    id="fastFilter" 
+                    name="fastFilter"
+                    onClick={()=>setActive(true)}
+                />
+                {value}
+            </label>
+        </div> 
+    )
+}
+      
 export default FilterButton

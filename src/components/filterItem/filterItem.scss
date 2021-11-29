@@ -1,0 +1,32 @@
+.filter__item {
+  margin: 1rem;
+  padding-left: 1.5rem;
+  margin-left: -2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #4a4a4a;
+  position: relative;
+}
+
+.filter__item input {
+  display: none;
+}
+
+.filter__item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.filter__item label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}

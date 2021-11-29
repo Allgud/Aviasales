@@ -1,9 +1,28 @@
 .tabs__element {
-  display: block;
   padding: 15px;
   flex: 0 0 28.75%;
+  list-style: none;
+}
+
+.tabs__element:not(:last-child) {
+  border-right: 1px solid lightgrey;
+}
+
+.tabs__element label {
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #4a4a4a;
 }
 
 .tabs__element input {
   display: none;
+}
+
+.tabs__element input:checked {
+  background-color: blue;
 }

@@ -4,11 +4,10 @@ import FilterButton from "../filterButton"
 import {filters} from "../../constants"
 
 const Tabs=()=>{
-
-    const filterValues=filters.map(value => (
+    const filterValues=filters.map((value, i)=> (
         <FilterButton 
-            key={Date.now()}
-            value={value}
+            key={i}
+            value={value.toUpperCase()}
         />
     ))
 
@@ -19,6 +18,4 @@ const Tabs=()=>{
     )
 }
     
-
-
 export default Tabs
