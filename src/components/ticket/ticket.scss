@@ -1,0 +1,23 @@
+.ticket__item {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ticket--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2196f3;
+  text-align: baseline;
+}
